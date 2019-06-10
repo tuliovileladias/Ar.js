@@ -55,10 +55,10 @@
                         console.log("DebugGreen")
                         const src_btn_green = aEntity_green.getAttribute('obj-model');
                         const src_btn_red = aEntity_red.getAttribute('obj-model');
-                        src_btn_green.obj = "http://localhost:1234/Testes/3Ds//botoes/btn_green_pressed.obj"
-                        src_btn_green.mtl = "http://localhost:1234/Testes/3Ds/botoes/btn_green_pressed.mtl"
-                        src_btn_red.obj = "http://localhost:1234/Testes/3Ds//botoes/btn_red.obj"
-                        src_btn_red.mtl = "http://localhost:1234/Testes/3Ds/botoes/btn_red.mtl"
+                        src_btn_green.obj = "./3Ds/botoes/btn_green_pressed.obj"
+                        src_btn_green.mtl = "./3Ds/botoes/btn_green_pressed.mtl"
+                        src_btn_red.obj = "./3Ds/botoes/btn_red.obj"
+                        src_btn_red.mtl = "./3Ds/botoes/btn_red.mtl"
                         aEntity_green.setAttribute('obj-model', src_btn_green);
                         aEntity_red.setAttribute('obj-model', src_btn_red);
                         send(100);
@@ -68,10 +68,10 @@
                         console.log("DebugRed")
                         const src_btn_green = aEntity_green.getAttribute('obj-model');
                         const src_btn_red = aEntity_red.getAttribute('obj-model');
-                        src_btn_green.obj = "http://localhost:1234/Testes/3Ds//botoes/btn_green.obj"
-                        src_btn_green.mtl = "http://localhost:1234/Testes/3Ds/botoes/btn_green.mtl"
-                        src_btn_red.obj = "http://localhost:1234/Testes/3Ds//botoes/btn_red_pressed.obj"
-                        src_btn_red.mtl = "http://localhost:1234/Testes/3Ds/botoes/btn_red_pressed.mtl"
+                        src_btn_green.obj = "./3Ds/botoes/btn_green.obj"
+                        src_btn_green.mtl = "./3Ds/botoes/btn_green.mtl"
+                        src_btn_red.obj = "./3Ds/botoes/btn_red_pressed.obj"
+                        src_btn_red.mtl = "./3Ds/botoes/btn_red_pressed.mtl"
                         aEntity_green.setAttribute('obj-model', src_btn_green);
                         aEntity_red.setAttribute('obj-model', src_btn_red);
                         send(0);
@@ -97,7 +97,7 @@
         </a-assets>
         
 
-        <a-marker type="pattern"  url="http://localhost:1234/Testes/3Ds/pattern-icc-marker.patt" markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" >
+        <a-marker type="pattern"  url="./3Ds/pattern-icc-marker.patt" markerhandler emitevents="true" cursor="rayOrigin: mouse" id="animated-marker" >
            <!-- <a-entity
                 id="animated-model2"
                 obj-model= 
@@ -119,8 +119,8 @@
             <a-entity
                 id="btn_green"
                 obj-model= 
-                "obj: http://localhost:1234/Testes/3Ds//botoes/btn_green.obj; 
-                mtl: http://localhost:1234/Testes/3Ds/botoes/btn_green.mtl"
+                "obj: ./3Ds/botoes/btn_green.obj; 
+                mtl: ./3Ds/botoes/btn_green.mtl"
                 scale="0.03 0.03 0.03"
                 rotation="-90 0 90"
                 position="-0.35 0 0">
@@ -128,8 +128,8 @@
             <a-entity
                 id="btn_red"
                 obj-model= 
-                "obj: http://localhost:1234/Testes/3Ds//botoes/btn_red_pressed.obj; 
-                mtl: http://localhost:1234/Testes/3Ds/botoes/btn_red_pressed.mtl"
+                "obj: ./3Ds/botoes/btn_red_pressed.obj; 
+                mtl: ./3Ds/botoes/btn_red_pressed.mtl"
                 scale="0.03 0.03 0.03"
                 rotation="-90 0 90"
                 position="0.6 0 0">
