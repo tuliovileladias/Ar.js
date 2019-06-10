@@ -1,0 +1,10 @@
+docker build .
+
+(. é o local do docker file
+
+docker run --name teste-docker-AR -itd -p 3001:80 dockerfile
+
+(a porta 3001 é do container e 80 da maquina)
+
+
+6a74f9fcbeeb
