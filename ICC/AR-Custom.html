@@ -1,0 +1,28 @@
+<!-- 
+        Informações sobre os módulos aqui
+        https://aframe.io/docs/0.6.0/components/rotation.html ]
+-->
+
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+      <!-- <a-marker preset='hiro'> -->
+        <a-marker type="pattern"  url="http://localhost:1234/Testes/3Ds/pattern-icc-marker.patt">
+        <!-- Adding an OBJ file to an AR Project-->
+                <a-entity 
+                obj-model= 
+                        "obj: http://localhost:1234/Testes/3Ds/tinker.obj; 
+                        mtl: http://localhost:1234/Testes/3Ds/obj.mtl"
+                        scale="0.05 0.05 0.05"
+                        rotation="0 180 180"
+                >
+                </a-entity>
+                <a-entity light="type:directional; castShadow:true;" position="30 30 30"></a-entity>
+                <a-gltf-model src="tree.gltf" shadow="receive: false"></a-gltf-model>  
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
+</body>
