@@ -18,13 +18,14 @@
         var ItemJSON;
 
         //ItemJSON = ' {"augmented_reality":'+String(send_value)+' , "x-master-token":"NSd7LW75TDo5nokP8jvveRW3"}';
-        
+        console.log("debug - send");
         var URL = ""
         if(send_value==100){
-
+            console.log("LIGAR");
             URL = "https://smartcampus.inatel.br:4433/api/userapps/5d1cebdf6a4890001a84a5fc/triggers/execute/5d1f63366a4890001a84cf00?x-master-token=HCy3w0EYl3FrZ_2oG1ZJCSbb";  //Your URL
         }
         else{
+            console.log("DESLIGAR");
             URL = "https://smartcampus.inatel.br:4433/api/userapps/5d1cebdf6a4890001a84a5fc/triggers/execute/5d1f63336a4890001a84cefd?x-master-token=HCy3w0EYl3FrZ_2oG1ZJCSbb";
         }
         var xmlhttp = new XMLHttpRequest();
